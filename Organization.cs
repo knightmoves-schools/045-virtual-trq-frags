@@ -8,7 +8,7 @@ public class Organization{
       Name = name;
    }
 
-   public string LookUpBranding(bool includeYearEstablished){
+   public virtual string LookUpBranding(bool includeYearEstablished){
       if (includeYearEstablished){
          return $"{Name} est. {YearEstablished}";
       } else {
